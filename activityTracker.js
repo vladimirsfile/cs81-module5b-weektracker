@@ -8,12 +8,13 @@ const myWeek = [
     {day: "Sunday", activity: "paintball", category: "social", hoursSpent: 2, enjoyment: 7, timeOfDay: "afternoon"}
 ];
 
-
+// Part 2
 // I predict that "tennis" will have the highest enjoyment.
 // I predict that the "physical" category will dominate my week. 
 // I predict a pattern in which the physical activities are done predominantly earlier during the day. 
 
 
+//Part 3
 // Calculate total hours spent on physical activity.
 function totalPhysicalHours(log) {
     // First, filter the physical activities.
@@ -35,3 +36,13 @@ function averageAfternoonEnjoyment(log) {
 
 console.log(`Total time spent on physical activities: ${totalPhysicalHours(myWeek)} hours`);
 console.log("Average afternoon enjoyment:", averageAfternoonEnjoyment(myWeek));
+
+
+// Part 4
+// This function accepts another function as a parameter.
+function filterActivities(rule) {
+    return myWeek.filter(rule);
+}
+// Find only morning activities.  
+const morningActivities = filterActivities(act => act.timeOfDay === "morning");
+console.log("Morning activities: ", morningActivities);
