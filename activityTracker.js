@@ -8,3 +8,6 @@ const myWeek = [
     {day: "Sunday", activity: "paintball", category: "social", hoursSpent: 2, enjoyment: 7, timeOfDay: "afternoon"}
 ];
 
+// I predict that "tennis" will have the highest enjoyment.
+// I predict that the "physical" category will dominate my week. 
+// I predict a pattern in which the physical activities are done predominantly earlier during the day. 
